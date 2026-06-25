@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//opt/homebrew/bin/**)",
+      "Read(//Users/zoelai/.nvm/versions/**)",
+      "Read(//Users/zoelai/.volta/**)",
+      "Bash(find /opt /usr/local /Users/zoelai -name \"node\" -type f 2>/dev/null | head -5)",
+      "Bash(BASE=\"/Users/zoelai/Claude Code/GO Website\" && mkdir -p \\\\ *)"
+    ]
+  }
+}

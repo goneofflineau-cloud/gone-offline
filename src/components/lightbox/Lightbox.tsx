@@ -16,7 +16,9 @@ export default function MediaLightbox({ items, index, onClose }: Props) {
   const slides = items.map((item) => ({
     src: item.imageUrl,
     alt: item.title,
-    type: item.mediaType,
+    // yarl expects type "image" | undefined — map our "photo"/"video" accordingly
+    type: item.mediaType === 'photo' ? ('image' as const) : undefined,
+    mediaType: item.mediaType,
     vimeoId: item.vimeoId,
     title: item.title,
     description: item.description,
@@ -31,7 +33,7 @@ export default function MediaLightbox({ items, index, onClose }: Props) {
       render={{
         slide: ({ slide }) => {
           const s = slide as (typeof slides)[number]
-          if (s.type === 'video' && s.vimeoId) {
+          if (s.mediaType === 'video' && s.vimeoId) {
             return (
               <div className="flex flex-col items-center justify-center w-full h-full px-4">
                 <div className="w-full max-w-4xl">

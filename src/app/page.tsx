@@ -1,30 +1,25 @@
-import { featuredMediaItems } from '@/data/media'
+'use client'
+
+import { useState } from 'react'
+import { travelItems } from '@/data/media'
+import { MediaType } from '@/lib/types'
 import MediaGrid from '@/components/grid/MediaGrid'
+import FilterToggle from '@/components/ui/FilterToggle'
+
+type Filter = MediaType | 'all'
 
 export default function HomePage() {
-  return (
-    <>
-      {/* Full-bleed hero */}
-      <section className="relative h-screen flex items-end pb-16 px-6 overflow-hidden bg-ink">
-        {/* Swap this div for a real hero image/video once assets arrive */}
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/20 to-ink/60" />
-        <div className="relative z-10 max-w-7xl mx-auto w-full">
-          <p className="text-gold/70 text-xs tracking-[0.3em] uppercase mb-3 font-body">
-            Travel & Lifestyle
-          </p>
-          <h1 className="font-display text-5xl sm:text-7xl md:text-8xl text-background font-light italic leading-none">
-            Gone Offline
-          </h1>
-          <p className="mt-4 text-background/60 text-sm tracking-widest uppercase font-body">
-            Photography & Videography by Zoe and Les
-          </p>
-        </div>
-      </section>
+  const [filter, setFilter] = useState<Filter>('all')
 
-      {/* Mixed grid — recent featured work */}
-      <section className="max-w-7xl mx-auto px-4 md:px-6 py-16 md:py-24">
-        <MediaGrid items={featuredMediaItems} />
-      </section>
-    </>
+  const filtered =
+    filter === 'all' ? travelItems : travelItems.filter((i) => i.mediaType === filter)
+
+  return (
+    <div className="pt-28 pb-24 px-2 md:px-3">
+      <div className="flex justify-end mb-8">
+        <FilterToggle value={filter} onChange={setFilter} />
+      </div>
+      <MediaGrid items={filtered} />
+    </div>
   )
 }

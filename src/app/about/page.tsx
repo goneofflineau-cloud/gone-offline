@@ -1,22 +1,24 @@
 import Image from 'next/image'
 
+export const metadata = { title: 'Who We Are | Gone Offline' }
+
 const paragraphs = [
   {
     text: 'After being stuck in one of the worst lockdowns in the world, we now make the most of our free time, whether it\'s packing up the Raptor and driving 4 hours to escape the city or simply finding new experiences to try and supporting local businesses.',
-    image: '/images/about/about-1.jpg',
+    image: '/images/about/zoe-and-les-on-the-road.jpg',
     imageAlt: 'Zoe and Les on the road',
     imageLeft: false,
   },
   {
     text: 'The Raptor is Les\' baby and it has gotten us to some incredible destinations in Australia! If he\'s not exploring the outdoors, then he\'s being an Italian chef at home cooking up delicious pasta recipes, following the F1 or watching his favourite ghost hunters and fishing YouTube channels.',
-    image: '/images/about/about-2.jpg',
-    imageAlt: 'Les with the Raptor',
+    image: '/images/about/Les.jpg',
+    imageAlt: 'Les',
     imageLeft: true,
   },
   {
     text: 'Zoe is a true Pisces and constantly looking for the next escape from reality. She hates sitting still and is probably picturing her life in a different city or across the world at any given moment. She\'s the type to cry over mountain views, tiny cat paws and movies like Past Lives or 500 Days of Summer.',
-    image: '/images/about/about-3.jpg',
-    imageAlt: 'Zoe at a mountain viewpoint',
+    image: '/images/about/Zoe.jpg',
+    imageAlt: 'Zoe',
     imageLeft: false,
   },
 ]
@@ -26,9 +28,8 @@ export default function AboutPage() {
     <div className="pt-28 pb-24">
       {/* Page header */}
       <header className="max-w-4xl mx-auto px-4 md:px-6 mb-20">
-        <p className="text-gold text-xs tracking-[0.3em] uppercase mb-2 font-body">The story</p>
         <h1 className="font-display text-5xl md:text-6xl font-light italic">
-          Zoe &amp; Les
+          Who we are
         </h1>
       </header>
 

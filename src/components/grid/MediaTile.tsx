@@ -25,10 +25,8 @@ export default function MediaTile({ item, onClick, priority = false }: Props) {
       className={`group relative w-full ${aspectClass} overflow-hidden bg-ink/5 block`}
       aria-label={`View ${item.title}`}
     >
-      {/* Photo or video background */}
       {item.mediaType === 'video' && item.vimeoId ? (
         <>
-          {/* Still image shown while iframe loads / on mobile */}
           <Image
             src={item.imageUrl}
             alt={item.title}
@@ -52,14 +50,12 @@ export default function MediaTile({ item, onClick, priority = false }: Props) {
         />
       )}
 
-      {/* Hover overlay — title only, no clutter */}
       <div className="absolute inset-0 bg-ink/0 group-hover:bg-ink/30 transition-colors duration-300 flex items-end p-4">
         <span className="text-background font-display text-lg italic opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-1 group-hover:translate-y-0">
           {item.title}
         </span>
       </div>
 
-      {/* Video indicator dot */}
       {item.mediaType === 'video' && (
         <span className="absolute top-3 right-3 w-1.5 h-1.5 rounded-full bg-gold opacity-80" />
       )}

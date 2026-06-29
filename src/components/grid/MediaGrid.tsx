@@ -18,9 +18,9 @@ export default function MediaGrid({ items }: Props) {
         CSS column masonry — no JS reflow, graceful on mobile.
         Two columns on mobile, three on md, four on xl.
       */}
-      <div className="columns-2 md:columns-3 xl:columns-4 gap-2 md:gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-1.5">
         {items.map((item, i) => (
-          <div key={item.id} className="mb-2 md:mb-3 break-inside-avoid">
+          <div key={item.id}>
             <MediaTile
               item={item}
               onClick={() => setLightboxIndex(i)}

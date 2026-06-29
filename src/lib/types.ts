@@ -19,6 +19,8 @@ export interface FeaturedProject {
   id: string             // URL slug
   title: string
   client?: string
+  clientUrl?: string
+  clients?: { name: string; url: string }[]  // multiple collaborators
   year: number
   heroImage: string
   description: string
@@ -26,4 +28,5 @@ export interface FeaturedProject {
   vimeoId?: string
   gallery: string[]      // ordered list of image paths for case-study page
   shotOn?: string        // displayed only as footer credit on case-study page
+  instagramEmbeds?: string[]  // post/reel URLs — triggers embed layout
 }

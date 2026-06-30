@@ -25,10 +25,7 @@ export default function InstagramEmbeds({ urls }: Props) {
           }
         }}
       />
-      <div
-        className="grid gap-6 overflow-x-auto"
-        style={{ gridTemplateColumns: `repeat(${urls.length}, minmax(260px, 1fr))` }}
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {urls.map((url) => (
           <blockquote
             key={url}

@@ -28,7 +28,7 @@ export default function StaysPage() {
                   sizes="(max-width: 768px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 flex items-end justify-center" style={{ paddingBottom: 'calc(1.5rem + 2cm)' }}>
-                  <span className="text-background text-4xl italic text-center px-4 drop-shadow-lg" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+                  <span className="text-background text-4xl text-center px-4 drop-shadow-lg" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
                     {property.name}
                   </span>
                 </div>

@@ -6,13 +6,13 @@ export const metadata = { title: 'Stays | Gone Offline' }
 
 export default function StaysPage() {
   return (
-    <div className="pt-28 pb-24" style={{ paddingLeft: '3.5cm', paddingRight: '3.5cm' }}>
+    <div className="pt-28 pb-24 px-4 md:px-[3.5cm]">
       <header className="mb-12 px-1">
         <p className="text-gold text-xs tracking-[0.3em] uppercase mb-2 font-body">Selected Works</p>
         <h1 className="font-display text-5xl md:text-6xl font-light italic">Stays</h1>
       </header>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-x-[1.5cm] gap-y-[1cm]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-[1.5cm] gap-y-[1cm]">
         {hotelProperties.map((property) => {
           const cover = getCoverImage(property.name)
           if (!cover) return null

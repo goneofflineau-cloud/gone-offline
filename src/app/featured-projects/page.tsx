@@ -18,7 +18,7 @@ export default function FeaturedProjectsPage() {
             /* ── Embed layout (e.g. Visit Victoria) ── */
             if (project.instagramEmbeds?.length) {
               return (
-                <article key={project.id} className="border-t border-ink/8 first:border-t-0 px-6 md:px-16 py-16 md:py-24">
+                <article key={project.id} id={project.id} className="border-t border-ink/8 first:border-t-0 px-6 md:px-16 py-16 md:py-24">
                   <div className="max-w-2xl mb-12">
                     <h2 className="font-display text-4xl md:text-5xl font-light italic mb-4 leading-tight">
                       {project.title}
@@ -55,6 +55,7 @@ export default function FeaturedProjectsPage() {
             return (
               <article
                 key={project.id}
+                id={project.id}
                 className="border-t border-ink/8 first:border-t-0"
               >
                 <div className={`flex flex-col ${imageLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>

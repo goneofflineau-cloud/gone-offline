@@ -39,6 +39,7 @@ export const featuredProjects: FeaturedProject[] = [
       'https://www.instagram.com/p/DXismGKPfBV/',
       'https://www.instagram.com/reel/DNNRU8QT3gZ/',
       'https://www.instagram.com/p/DMM43XyThGx/',
+      'https://www.instagram.com/p/DbJsA_nPxdV/',
     ],
   },
   {
@@ -61,6 +62,9 @@ export const featuredProjects: FeaturedProject[] = [
       'https://www.instagram.com/reel/DSy5Cj2gQYw/',
       'https://www.instagram.com/reel/DRbieeuAUbq/',
       'https://www.instagram.com/reel/DROo2jEAcIy/',
+      'https://www.instagram.com/zoe_laix/reel/DXEJpggAQgJ/',
+      'https://www.instagram.com/zoe_laix/reel/DVvChSBgRCb/',
+      'https://www.instagram.com/p/DVIX_5NgfRe/',
     ],
   },
   {

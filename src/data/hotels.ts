@@ -21,6 +21,7 @@ export const hotelProperties: HotelProperty[] = [
   { id: 'carrajung-estate', name: 'Carrajung Estate' },
   { id: 'hilltop-at-bright', name: 'Hilltop at Bright' },
   { id: 'mantra-lorne', name: 'Mantra Lorne' },
+  { id: 'warrnambool-retreat', name: 'Warrnambool Retreat' },
 ]
 
 // All images for a given property, in curated order

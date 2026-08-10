@@ -103,7 +103,7 @@ export const mediaItems: MediaItem[] = [
   { id: 'hilltop-at-bright-6', title: 'Hilltop at Bright', category: 'hotel', mediaType: 'photo', year: 2026, imageUrl: '/images/hotels/hilltop-at-bright-6.jpg', description: '', featured: false, aspectRatio: 'portrait' },
   { id: 'hilltop-at-bright-7', title: 'Hilltop at Bright', category: 'hotel', mediaType: 'photo', year: 2026, imageUrl: '/images/hotels/hilltop-at-bright-7.jpg', description: '', featured: false, aspectRatio: 'portrait' },
   { id: 'hilltop-at-bright-8', title: 'Hilltop at Bright', category: 'hotel', mediaType: 'photo', year: 2026, imageUrl: '/images/hotels/hilltop-at-bright-8.jpg', description: '', featured: false, aspectRatio: 'portrait' },
-  { id: 'hilltop-at-bright-9', title: 'Hilltop at Bright', category: 'hotel', mediaType: 'photo', year: 2026, imageUrl: '/images/hotels/hilltop-at-bright-9.jpg', description: '', featured: false, aspectRatio: 'portrait' },
+
   { id: 'hilltop-at-bright-10', title: 'Hilltop at Bright', category: 'hotel', mediaType: 'photo', year: 2026, imageUrl: '/images/hotels/hilltop-at-bright-10.jpg', description: '', featured: false, aspectRatio: 'portrait' },
   { id: 'idle-lakehouse-gippsland', title: 'Idle Lakehouse Gippsland', category: 'hotel', mediaType: 'photo', year: 2026, imageUrl: '/images/hotels/idle-lakehouse-gippsland.jpg', description: '', featured: false, aspectRatio: 'portrait' },
   { id: 'into-the-wild', title: 'Into the Wild', category: 'hotel', mediaType: 'photo', year: 2026, imageUrl: '/images/hotels/into-the-wild.jpg', description: '', featured: false, aspectRatio: 'portrait' },

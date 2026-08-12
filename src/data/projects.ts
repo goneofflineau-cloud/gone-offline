@@ -58,6 +58,7 @@ export const featuredProjects: FeaturedProject[] = [
     gallery: [],
     shotOn: 'Sony A7IV · Sony A7V · DJI Mavic 4 Pro',
     instagramEmbeds: [
+      'https://www.instagram.com/p/Db4_QjbxH4M/',
       'https://www.instagram.com/reel/DSb5EEcgU8t/',
       'https://www.instagram.com/reel/DSy5Cj2gQYw/',
       'https://www.instagram.com/reel/DRbieeuAUbq/',
@@ -79,6 +80,7 @@ export const featuredProjects: FeaturedProject[] = [
     gallery: [],
     shotOn: 'Sony A7IV',
     instagramEmbeds: [
+      'https://www.instagram.com/p/DbsP4bIhW9A/',
       'https://www.instagram.com/reel/DUmJdMWEoom/',
       'https://www.instagram.com/reel/DOA_jS8kpp8/',
       'https://www.instagram.com/reel/DIyB9WzTiFU/',

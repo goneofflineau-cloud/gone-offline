@@ -58,6 +58,14 @@ export default function Nav() {
                   {staysOpen && (
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4">
                       <div className="bg-background border border-ink/8 shadow-lg py-3 w-56">
+                        <Link
+                          href="/hotels"
+                          className={`block px-5 py-2 text-[10px] tracking-widest uppercase transition-colors hover:text-gold hover:bg-ink/3 border-b border-ink/8 mb-1 ${
+                            pathname === '/hotels' ? 'text-gold' : 'text-ink/60'
+                          }`}
+                        >
+                          Explore All
+                        </Link>
                         {hotelProperties.map((property) => (
                           <Link
                             key={property.id}
@@ -96,6 +104,12 @@ export default function Nav() {
                   {projectsOpen && (
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4">
                       <div className="bg-background border border-ink/8 shadow-lg py-3 w-56">
+                        <Link
+                          href="/featured-projects"
+                          className="block px-5 py-2 text-[10px] tracking-widest uppercase transition-colors hover:text-gold hover:bg-ink/3 border-b border-ink/8 mb-1 text-ink/60"
+                        >
+                          Explore All
+                        </Link>
                         {featuredProjects.map((project) => (
                           <Link
                             key={project.id}
@@ -156,6 +170,13 @@ export default function Nav() {
                   </button>
                   {staysOpen && (
                     <div className="mt-3 ml-3 flex flex-col gap-3">
+                      <Link
+                        href="/hotels"
+                        onClick={() => { setOpen(false); setStaysOpen(false) }}
+                        className="text-xs tracking-widest uppercase transition-colors hover:text-gold text-ink/50 pb-2 border-b border-ink/8"
+                      >
+                        Explore All
+                      </Link>
                       {hotelProperties.map((property) => (
                         <Link
                           key={property.id}
@@ -188,6 +209,13 @@ export default function Nav() {
                   </button>
                   {projectsOpen && (
                     <div className="mt-3 ml-3 flex flex-col gap-3">
+                      <Link
+                        href="/featured-projects"
+                        onClick={() => { setOpen(false); setProjectsOpen(false) }}
+                        className="text-xs tracking-widest uppercase transition-colors hover:text-gold text-ink/50 pb-2 border-b border-ink/8"
+                      >
+                        Explore All
+                      </Link>
                       {featuredProjects.map((project) => (
                         <Link
                           key={project.id}

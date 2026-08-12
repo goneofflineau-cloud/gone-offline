@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { hotelProperties } from '@/data/hotels'
@@ -23,11 +24,15 @@ export default function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-ink/5">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link
-          href="/"
-          className="font-display text-xl tracking-widest uppercase text-ink hover:text-gold transition-colors"
-        >
-          Gone Offline
+        <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+          <Image
+            src="/images/logo.png"
+            alt="Gone Offline"
+            width={160}
+            height={30}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

@@ -90,21 +90,6 @@ export const featuredProjects: FeaturedProject[] = [
     ],
   },
   {
-    id: 'red-balloon',
-    title: 'Red Balloon',
-    year: 2025,
-    client: '@redballoon',
-    clientUrl: 'https://www.instagram.com/redballoon',
-    heroImage: '/images/projects/red-balloon-hero.jpg',
-    description: 'UGC content commissioned by Red Balloon to showcase unique experiences across Australia.',
-    mediaType: 'photo',
-    gallery: [],
-    shotOn: 'Sony A7IV · Sony A7V',
-    instagramEmbeds: [
-      'https://www.instagram.com/p/DSqT0A3El8e/',
-    ],
-  },
-  {
     id: 'other-brand-work',
     title: 'Other Brand Work',
     year: 2025,
@@ -114,6 +99,7 @@ export const featuredProjects: FeaturedProject[] = [
     gallery: [],
     instagramEmbeds: [
       'https://www.instagram.com/p/DXX3CFADB88/',
+      'https://www.instagram.com/p/DSqT0A3El8e/',
     ],
   },
   {

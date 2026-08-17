@@ -105,6 +105,18 @@ export const featuredProjects: FeaturedProject[] = [
     ],
   },
   {
+    id: 'other-brand-work',
+    title: 'Other Brand Work',
+    year: 2025,
+    heroImage: '/images/projects/other-brand-work-hero.jpg',
+    description: 'UGC content filmed and produced for various brands.',
+    mediaType: 'photo',
+    gallery: [],
+    instagramEmbeds: [
+      'https://www.instagram.com/p/DXX3CFADB88/',
+    ],
+  },
+  {
     id: 'city-of-port-phillip',
     title: 'City of Port Phillip',
     year: 2026,

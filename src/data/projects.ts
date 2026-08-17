@@ -90,19 +90,6 @@ export const featuredProjects: FeaturedProject[] = [
     ],
   },
   {
-    id: 'other-brand-work',
-    title: 'Other Brand Work',
-    year: 2025,
-    heroImage: '/images/projects/other-brand-work-hero.jpg',
-    description: 'UGC content filmed and produced for various brands.',
-    mediaType: 'photo',
-    gallery: [],
-    instagramEmbeds: [
-      'https://www.instagram.com/p/DXX3CFADB88/',
-      'https://www.instagram.com/p/DSqT0A3El8e/',
-    ],
-  },
-  {
     id: 'city-of-port-phillip',
     title: 'City of Port Phillip',
     year: 2026,
@@ -121,6 +108,19 @@ export const featuredProjects: FeaturedProject[] = [
       'https://www.instagram.com/reel/DWVqfUvvfoJ/',
       'https://www.instagram.com/reel/DUJpte7javn/',
       'https://www.instagram.com/reel/DVhQPfOgUrz/',
+    ],
+  },
+  {
+    id: 'other-brand-work',
+    title: 'Other Brand Work',
+    year: 2025,
+    heroImage: '/images/projects/other-brand-work-hero.jpg',
+    description: 'UGC content filmed and produced for various brands.',
+    mediaType: 'photo',
+    gallery: [],
+    instagramEmbeds: [
+      'https://www.instagram.com/p/DXX3CFADB88/',
+      'https://www.instagram.com/p/DSqT0A3El8e/',
     ],
   },
 ]

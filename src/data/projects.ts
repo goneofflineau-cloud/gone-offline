@@ -20,6 +20,7 @@ export const featuredProjects: FeaturedProject[] = [
       'https://www.instagram.com/p/DP0YfU9EWM0/',
       'https://www.instagram.com/reel/DNNGzlnzB8r/',
       'https://www.instagram.com/p/DPPymmKkwud/',
+      'https://www.instagram.com/p/DcIbftOxwiy/',
     ],
   },
   {

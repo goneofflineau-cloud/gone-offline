@@ -21,6 +21,7 @@ export const featuredProjects: FeaturedProject[] = [
       'https://www.instagram.com/reel/DNNGzlnzB8r/',
       'https://www.instagram.com/p/DPPymmKkwud/',
       'https://www.instagram.com/p/DcIbftOxwiy/',
+      'https://www.instagram.com/p/DdYRCQoxPjY/',
     ],
   },
   {

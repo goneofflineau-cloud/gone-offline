@@ -24,6 +24,22 @@ export const featuredProjects: FeaturedProject[] = [
     ],
   },
   {
+    id: 'visit-canberra',
+    title: 'Visit Canberra',
+    year: 2025,
+    client: '@visitcanberra',
+    clientUrl: 'https://www.instagram.com/visitcanberra',
+    heroImage: '/images/projects/visit-canberra-hero.jpg',
+    description: 'UGC content commissioned by @visitcanberra, showcasing the best of Australia\'s capital through an authentic travel lens.',
+    mediaType: 'photo',
+    gallery: [],
+    instagramEmbeds: [
+      'https://www.instagram.com/p/Dd3R2MABBSv/',
+      'https://www.instagram.com/p/Ddn7nAXAS5w/?img_index=1',
+      'https://www.instagram.com/p/Ddiyhr_gc2z/?img_index=1',
+    ],
+  },
+  {
     id: 'luxury-escapes',
     title: 'Luxury Escapes',
     year: 2025,

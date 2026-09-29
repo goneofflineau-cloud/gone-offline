@@ -29,7 +29,6 @@ export const featuredProjects: FeaturedProject[] = [
     year: 2025,
     client: '@visitcanberra',
     clientUrl: 'https://www.instagram.com/visitcanberra',
-    heroImage: '/images/projects/visit-canberra-hero.jpg',
     description: 'UGC content commissioned by @visitcanberra, showcasing the best of Australia\'s capital through an authentic travel lens.',
     mediaType: 'photo',
     gallery: [],

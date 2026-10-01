@@ -20,14 +20,14 @@ export default function ProjectPage({ params }: Props) {
     <article className="pt-20">
       {/* Hero */}
       <div className="relative h-[70vh] md:h-screen overflow-hidden bg-ink">
-        <Image
+        {project.heroImage && <Image
           src={project.heroImage}
           alt={project.title}
           fill
           className="object-cover opacity-90"
           sizes="100vw"
           priority
-        />
+        />}
         <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16 max-w-4xl">
           <p className="text-gold/70 text-xs tracking-[0.3em] uppercase mb-3 font-body">

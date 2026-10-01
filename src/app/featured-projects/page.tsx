@@ -64,14 +64,16 @@ export default function FeaturedProjectsPage() {
               >
                 <div className={`flex flex-col ${imageLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                   <div className="w-full md:w-1/2 relative aspect-[4/5] overflow-hidden bg-ink/5">
-                    <Image
-                      src={project.heroImage}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-700 hover:scale-[1.02]"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      priority={i === 0}
-                    />
+                    {project.heroImage && (
+                      <Image
+                        src={project.heroImage}
+                        alt={project.title}
+                        fill
+                        className="object-cover transition-transform duration-700 hover:scale-[1.02]"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        priority={i === 0}
+                      />
+                    )}
                   </div>
 
                   <div className="w-full md:w-1/2 flex items-center px-8 md:px-16 py-16 md:py-24">

@@ -22,7 +22,7 @@ export interface FeaturedProject {
   clientUrl?: string
   clients?: { name: string; url: string }[]  // multiple collaborators
   year: number
-  heroImage: string
+  heroImage?: string
   description: string
   mediaType: MediaType
   vimeoId?: string

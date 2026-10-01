@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { featuredProjects } from '@/data/projects'
 import InstagramEmbeds from '@/components/instagram/InstagramEmbeds'
+import PhotoSlider from '@/components/gallery/PhotoSlider'
 
 export const metadata = { title: 'Projects | Gone Offline' }
 
@@ -46,6 +47,9 @@ export default function FeaturedProjectsPage() {
                   </div>
 
                   <InstagramEmbeds urls={project.instagramEmbeds} />
+                  {project.gallery?.length > 0 && (
+                    <PhotoSlider images={project.gallery} alt={project.title} />
+                  )}
                 </article>
               )
             }

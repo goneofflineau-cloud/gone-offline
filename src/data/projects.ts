@@ -32,7 +32,17 @@ export const featuredProjects: FeaturedProject[] = [
     clientUrl: 'https://www.instagram.com/visitcanberra',
     description: 'UGC content commissioned by @visitcanberra, showcasing the best of Australia\'s capital through an authentic travel lens.',
     mediaType: 'photo',
-    gallery: [],
+    gallery: [
+      '/images/travel/visit-canberra-2.jpg',
+      '/images/travel/visit-canberra-3.jpg',
+      '/images/travel/visit-canberra-4.jpg',
+      '/images/travel/visit-canberra-5.jpg',
+      '/images/travel/visit-canberra-6.jpg',
+      '/images/travel/visit-canberra-7.jpg',
+      '/images/travel/visit-canberra-8.jpg',
+      '/images/travel/visit-canberra-9.jpg',
+      '/images/travel/visit-canberra-10.jpg',
+    ],
     instagramEmbeds: [
       'https://www.instagram.com/p/Dd3R2MABBSv/',
       'https://www.instagram.com/p/Ddn7nAXAS5w/?img_index=1',
